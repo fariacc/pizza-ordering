@@ -10,9 +10,6 @@ import {
   ListItem
 } from '@material-ui/core'
 
-import Height from '@material-ui/icons/Height'
-import ShoppingCart from '@material-ui/icons/ShoppingCart'
-
 // Import interface
 import { PizzaListInterface } from './../interfaces'
 
@@ -30,11 +27,11 @@ const CheckCustomPizza = (props: PizzaListInterface) => {
       <Grid container className="pizza-details">
         <Grid item xs={12} md={4} className="pizza-details__size">
           <p>Size: <strong>{props.pizzaItem.size}</strong></p>
-          <img src={pizzaImage} alt="Image of a pizza"/>
+          <img src={pizzaImage} alt="Pizza"/>
         </Grid>
         <Grid item xs={12} md={4} className="pizza-details__crust">
           <p>Crust type: <strong>{props.pizzaItem.crust}</strong></p>
-          <img src={props.pizzaItem.crust === "Thin" ? thinCrust : thickCrust} alt="Image of a pizza"/>
+          <img src={props.pizzaItem.crust === "Thin" ? thinCrust : thickCrust} alt="Crust type of the pizza"/>
         </Grid>
         <Grid item xs={12} md={4} className="pizza-details__toppings">
           <p>Toppings:</p>

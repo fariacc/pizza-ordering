@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/fariacc/pizza-ordering-app/static/css/main.f804e3eb.chunk.css",
+    "main.js": "/fariacc/pizza-ordering-app/static/js/main.14aafd29.chunk.js",
+    "main.js.map": "/fariacc/pizza-ordering-app/static/js/main.14aafd29.chunk.js.map",
+    "runtime-main.js": "/fariacc/pizza-ordering-app/static/js/runtime-main.00ebdebc.js",
+    "runtime-main.js.map": "/fariacc/pizza-ordering-app/static/js/runtime-main.00ebdebc.js.map",
+    "static/js/2.bc8d875d.chunk.js": "/fariacc/pizza-ordering-app/static/js/2.bc8d875d.chunk.js",
+    "static/js/2.bc8d875d.chunk.js.map": "/fariacc/pizza-ordering-app/static/js/2.bc8d875d.chunk.js.map",
+    "index.html": "/fariacc/pizza-ordering-app/index.html",
+    "precache-manifest.520918987b1202d6e2f152f461f5be1f.js": "/fariacc/pizza-ordering-app/precache-manifest.520918987b1202d6e2f152f461f5be1f.js",
+    "service-worker.js": "/fariacc/pizza-ordering-app/service-worker.js",
+    "static/css/main.f804e3eb.chunk.css.map": "/fariacc/pizza-ordering-app/static/css/main.f804e3eb.chunk.css.map",
+    "static/media/bacon.png": "/fariacc/pizza-ordering-app/static/media/bacon.ef3c5ae1.png",
+    "static/media/black-olives.png": "/fariacc/pizza-ordering-app/static/media/black-olives.73513da6.png",
+    "static/media/cheese.png": "/fariacc/pizza-ordering-app/static/media/cheese.5caecd29.png",
+    "static/media/green-pepper.png": "/fariacc/pizza-ordering-app/static/media/green-pepper.aa816d4f.png",
+    "static/media/mushrooms.png": "/fariacc/pizza-ordering-app/static/media/mushrooms.44b22a61.png",
+    "static/media/onions.png": "/fariacc/pizza-ordering-app/static/media/onions.3f543253.png",
+    "static/media/pepperoni.png": "/fariacc/pizza-ordering-app/static/media/pepperoni.b5909369.png",
+    "static/media/pineapple.png": "/fariacc/pizza-ordering-app/static/media/pineapple.d53760e8.png",
+    "static/media/styles.scss": "/fariacc/pizza-ordering-app/static/media/pizza-background.88c6030e.jpg",
+    "static/media/sausage.png": "/fariacc/pizza-ordering-app/static/media/sausage.b9e09852.png",
+    "static/media/single-pizza.png": "/fariacc/pizza-ordering-app/static/media/single-pizza.bec14cfe.png",
+    "static/media/spinach.png": "/fariacc/pizza-ordering-app/static/media/spinach.6c7dc98e.png",
+    "static/media/thick-crust.png": "/fariacc/pizza-ordering-app/static/media/thick-crust.7dab4caa.png",
+    "static/media/thin-crust.png": "/fariacc/pizza-ordering-app/static/media/thin-crust.e9af887c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00ebdebc.js",
+    "static/js/2.bc8d875d.chunk.js",
+    "static/css/main.f804e3eb.chunk.css",
+    "static/js/main.14aafd29.chunk.js"
+  ]
+}
