@@ -1,0 +1,58 @@
+{
+  "name": "pizza-ordering-app",
+  "version": "1.0.0",
+  "description": "Pizza ordering app built with React & TypeScript.",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fariacc/pizza-ordering-app.git"
+  },
+  "homepage": "https://github.com/fariacc/pizza-ordering-app#readme",
+  "author": {
+    "name": "Carolina Faria",
+    "url": "https://github.com/fariacc"
+  },
+  "keywords": [
+    "app",
+    "pizza",
+    "shop",
+    "react",
+    "reactjs",
+    "typescript"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">=11.0.0",
+    "npm": ">=6.0",
+    "yarn": ">=1.16.0"
+  },
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "node-sass": "^4.14.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-router-dom": "5.1.2",
+    "shortid": "2.2.15"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "@types/react-router-dom": "5.1.2",
+    "@types/shortid": "0.0.29",
+    "react-scripts": "3.2.0",
+    "typescript": "3.7.2"
+  }
+}
