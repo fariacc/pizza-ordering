@@ -8,11 +8,9 @@ import { PizzaListInterface } from './../interfaces'
 
 const CheckPizzaPage = (props: PizzaListInterface) => {
   return (
-    <div>
-      <CheckCustomPizza
-        pizzaItem={props.pizzaItem}
-      />
-    </div>
+    <CheckCustomPizza
+      pizzaItem={props.pizzaItem}
+    />
   )
 }
 export default CheckPizzaPage

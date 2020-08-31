@@ -1,9 +1,8 @@
-$color-black: #1E272E;
-$color-blue: #0FBCF9;
-$color-gray: #CCCCCC;
-$color-green: #0BE881;
-$color-red: #FF3F34;
 $color-white: #FFFFFF;
+$color-red: #CE442C;
+
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500);
 
 *{
   box-sizing: inherit;
@@ -17,230 +16,221 @@ html {
 }
 
 body {
-  font: 1rem sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+.illustrative-image{
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .app {
   min-height: 100vh;
-  background: url('../assets/pizza-background.jpg') no-repeat;
-  background-size: cover;
+  background: $color-red;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding: 1rem;
+  }
 }
 
 .add{
   &-size, &-crust, &-toppings{
     background-color: $color-white;
-    width: 70vw;
-    height: 70vh;
-    padding: 2rem;
-    margin: auto;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      min-height: 100vh;
+    }
+    .pizza-background{
+      background: url("../assets/pizza-background.jpg");
+      height: 120px;
+      background-size: cover;
+      opacity: 0.85;
+    }
+    h1{
+      font-family: Cabin Sketch;
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 2rem;
+      @media only screen and (max-width: 600px) {
+        padding: 0 1rem;
+      }
+    }
+    h2 {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 0 2rem;
+      @media only screen and (max-width: 600px) {
+        padding: 0 1rem;
+      }
+    }
+    .MuiFormControl-root{
+      width: 100%;
+      .MuiFormGroup-root{
+        display: block;
+        padding: 0 2rem;
+        @media only screen and (max-width: 600px) {
+          padding: 0 1rem;
+        }
+        .MuiFormControlLabel-label{
+          height: 100%;
+          width: 100%;
+          padding: 10px 5px;
+          @media only screen and (max-width: 600px) {
+            padding: 0;
+          }
+        }
+        .Mui-checked + .MuiFormControlLabel-label{
+          border: 1px solid $color-red;
+          border-radius: 10px;
+        }
+        .MuiFormControlLabel-root{
+          vertical-align: baseline;
+          text-align: center;
+          width: 33%;
+          margin: 0;
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+          p{
+            margin-top: 0;
+          }
+          &:first-child{
+            img{
+              width: 60%;
+            }
+          }
+          &:nth-child(2){
+            img{
+              width: 80%;
+            }
+          }
+          &:nth-child(3){
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .MuiIconButton-root{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.add-crust{
+  .MuiFormControlLabel-root{
+    @media only screen and (min-width: 601px) {
+      width: 50%!important;
+    }
+  }
+}
+
+.add-toppings{
+  .ingredients-pictures{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      text-align: center;
+      width: 130px;
+      height: 160px;
+      display: block;
+      img{
+        width: 100%;
+      }
+      p{
+        font-size: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+  .MuiInputBase-root{
+    margin: 3rem 2rem;
+    @media only screen and (max-width: 601px) {
+      margin: 1rem;
+    }
+    .MuiSelect-selectMenu{
+      white-space: normal;
+    }
   }
 }
 
 .check-pizza{
   background-color: $color-white;
-  width: 70vw;
-  height: 70vh;
-  padding: 2rem;
-  margin: auto;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .pizza-background{
+    background: url("../assets/pizza-background.jpg");
+    height: 120px;
+    background-size: cover;
+    opacity: 0.85;
+  }
+  h1{
+    font-family: Cabin Sketch;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+    @media only screen and (max-width: 600px) {
+      padding: 0 1rem;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 2rem;
+    @media only screen and (max-width: 600px) {
+      padding: 0 1rem;
+    }
+  }
+  .pizza-details{
+    padding: 0 2rem;
+    text-align: center;
+    @media only screen and (max-width: 600px) {
+      padding: 0 1rem;
+    }
+    &__size, &__crust{
+      img{
+        width: 100%;
+      }
+    }
+    &__toppings{
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          text-align: center;
+          width: fit-content;
+          line-height: 0;
+          margin: auto;
+        }
+      }
+    }
+    &__price{
+      text-align: center;
+    }
+  }
 }
 
-// /* Form */
-// fieldset {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-// }
-//
-// fieldset + fieldset {
-//   margin-top: 21px;
-// }
-//
-// input:not([type=checkbox]):not([type=submit]),
-// select {
-//   padding: 6px 0;
-//   width: 100%;
-//   font-size: 14px;
-//   background: #fff;
-//   border: 0;
-//   border-bottom: 1px solid var(--color-gray);
-// }
-//
-// input:focus {
-//   outline: 0;
-//   border-bottom-color: $color-blue;
-// }
-//
-// label {
-//   font-size: 14px;
-//   font-weight: 700;
-//   cursor: default;
-// }
-//
-// label + input {
-//   margin-top: 4px;
-// }
-//
-// .custom-checkbox-checkbox {
-//   display: none;
-//   visibility: hidden;
-// }
-//
-// .custom-checkbox-label {
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   position: relative;
-//   line-height: 1;
-// }
-//
-// .custom-checkbox-label::before {
-//   display: block;
-//   margin-right: 6px;
-//   content: '';
-//   width: 16px;
-//   height: 16px;
-//   background: #fff;
-//   border: 2px solid var(--color-gray);
-//   border-radius: 2px;
-// }
-//
-// .custom-checkbox-checkbox:checked + .custom-checkbox-label::before {
-//   background: $color-blue;
-//   border-color: $color-blue;
-// }
-//
-// .custom-checkbox-checkbox:checked + .custom-checkbox-label::after {
-//   content: '';
-//   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs/%3E%3Cpath fill='%23fff' d='M1 14l4-4 8 8L27 4l4 4-18 18z'/%3E%3C/svg%3E");
-//   background-size: 14px;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: 1;
-//   width: 16px;
-//   height: 16px;
-// }
-
-/* Modal */
-.modal-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,.15);
-}
-
-.modal-dialog {
-  position: relative;
-  padding: 28px 8px 22px;
-  width: 100%;
-  max-width: 340px;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
-}
-
-.modal-dialog .btn-cross {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-}
-
-.modal-dialog form {
-  padding: 0 16px;
-}
-
-/* Budget total */
-.budget-total-positive {
-  color: $color-green;
-}
-
-.budget-total-negative {
-  color: $color-red;
-}
-
-/* Budget list */
-.budget-list {
-  margin-bottom: 16px;
-}
-
-/* Budget item */
-.budget-item {
-  display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.budget-item + .budget-item {
-  margin-top: 8px;
-}
-
-.budget-item input:not([type=checkbox]):not([type=submit]) {
-  border: 0;
-}
-
-.budget-item input:not([type=checkbox]):not([type=submit]):focus {
-  border-bottom: 1px solid $color-blue;
-}
-
-.budget-item-paid,
-.budget-item-date,
-.budget-item-price,
-.budget-item-remove {
-  width: 100%;
-}
-
-.budget-item-paid,
-.budget-item-price,
-.budget-item-remove {
-  display: flex;
-  align-items: center;
-}
-
-.budget-item-paid {
-  width: 100%;
-  max-width: 24px;
-}
-
-.budget-item-title {
-  flex-grow: 1;
-}
-
-.budget-item-date {
-  max-width: 150px;
-}
-
-.budget-item-date input {
-  height: 29px;
-}
-
-.budget-item-price {
-  align-items: center;
-  max-width: 100px;
-}
-
-.budget-item-price input {
-  text-align: right;
-}
-
-.budget-item-price span {
-  font-size: 14px;
-  line-height: 1;
-}
-
-.budget-item-remove {
-  justify-content: flex-end;
-  max-width: 40px;
+.btn{
+  &-add{
+    text-align: center;
+    margin: 25px auto!important;
+    a{
+      text-decoration: none;
+      button{
+        background-color: red;
+        &:hover{
+          background-color: $color-white;
+          color: red;
+          border: 1px solid $color-red;
+        }
+      }
+    }
+  }
 }

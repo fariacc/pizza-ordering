@@ -10,13 +10,14 @@ const SizePage = (props: SizePageInterface) => {
 
   // Handle adding new pizza size
   function handleAddItem(itemToAdd: PizzaItemObjInterface) {
-    if (itemToAdd.size === "small") {
+
+    if (itemToAdd.size === "Small") {
       props.pizzaItem.price = 8
     }
-    else if (itemToAdd.size === "medium") {
+    else if (itemToAdd.size === "Medium") {
       props.pizzaItem.price = 10
     }
-    else {
+    else if (itemToAdd.size === "Large") {
       props.pizzaItem.price = 12
     }
     props.pizzaItem.size = itemToAdd.size
@@ -26,12 +27,11 @@ const SizePage = (props: SizePageInterface) => {
   }
 
   return (
-    <div>
-      <PizzaAddSize
-        sizeName={props.sizeName}
-        handleAddItem={handleAddItem}
-      />
-    </div>
+    <PizzaAddSize
+      sizeName={props.sizeName}
+      pizzaItem={props.pizzaItem}
+      handleAddItem={handleAddItem}
+    />
   )
 }
 export default SizePage

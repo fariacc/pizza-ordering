@@ -9,6 +9,7 @@ export interface PizzaItemObjInterface {
 // Interface for PizzaAddSize component
 export interface PizzaAddSizeInterface {
   sizeName: string;
+  pizzaItem: PizzaItemObjInterface;
   handleAddItem: (payload: PizzaItemObjInterface) => void;
 }
 

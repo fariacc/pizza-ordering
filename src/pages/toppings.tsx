@@ -14,20 +14,16 @@ const ToppingsPage = (props: ToppingsPageInterface) => {
     }
     props.pizzaItem.toppings = itemToAdd.toppings
 
-    console.log(props.pizzaItem)
-
     // Update pizzaItem state
     props.setPizzaItem(props.pizzaItem)
   }
 
   return (
-    <div>
-      <PizzaAddToppings
-        toppingsNames={props.toppingsNames}
-        pizzaItem={props.pizzaItem}
-        handleAddItem={handleAddItem}
-      />
-    </div>
+    <PizzaAddToppings
+      toppingsNames={props.toppingsNames}
+      pizzaItem={props.pizzaItem}
+      handleAddItem={handleAddItem}
+    />
   )
 }
 export default ToppingsPage
